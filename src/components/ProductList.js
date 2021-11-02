@@ -7,6 +7,7 @@ import { Button, Form, Row, Stack } from "react-bootstrap";
 
 function ProductList() {
   const [query, setQuery] = useState("");
+  console.log(productStore.products);
 
   const productList = productStore.products
     .filter((product) =>
